@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>GetSett!</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- LINK TO FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Link to jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+
+
+  </head>
+
+  <body>
+
+    <div class="jumbotron">
+      <a href="index.html"><img id="headpic" src="assets/pictures/BigLogo.JPG"></a>
+      <!-- <h1 class="text-center"><strong>Pet</strong>Setters</h1> -->
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Sign-Up Panel-->
+        <div class="col-lg-offset-3 col-lg-6">
+          <div class="panel panel-default">
+            <div class="panel-heading heading-o">
+              <h3 class="panel-title"><strong>Get</strong>Setup!</h3>
+            </div>
+
+            <div class="panel-body">
+
+              <!-- Sign-up Form (note the various input "types")-->
+              <form role="form">
+                <div class="form-group">
+                  <h4>Name (First and Last):</h4>
+                  <input class="form-control" id="name-input-o" type="text">
+                </div>
+                <h4>Email Address:</h4>
+                <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Email Address" aria-describedby="basic-addon1">
+              </div>
+              <br>
+                <div class="form-group">
+                  <h4>Address / City / Zip Code:</h4>
+                  <input class="form-control" id="adress-input-o" type="text">
+                </div>
+                 <div class="form-group">
+                  <h4>Miles from You:</h4>
+                  <input class="form-control" id="years-input" type="number">
+                </div>
+                <h4>Service Type:</h4>
+                  <div class="btn-group btn-group-justified" role="Service" data-toggle="buttons">
+                          <label class="btn btn-default">
+                              <input name="serviceType" type="radio" value="Boarding">Boarding
+                          </label>
+                          <!--<button type="button" class="btn btn-default" name="Boarding">Boarding</button>-->
+                          <label class="btn btn-default">
+                              <input name="serviceType" type="radio" value="House Sitting">House Sitting
+                          </label>
+                          <!--<button type="button" class="btn btn-default" name="House">House Sitting</button>-->
+                          <label class="btn btn-default">
+                              <input name="serviceType" type="radio" value="Drop-In Visits">Drop-In Visits
+                          </label>
+                          <!--<button type="button" class="btn btn-default" name="Drop-In">Drop-In Visits</button>-->
+                          <label class="btn btn-default">
+                              <input name="serviceType" type="radio" value="Day Care">Day Care
+                          </label>
+                          <!--<button type="button" class="btn btn-default" name="Day Care">Day Care</button>-->
+                  </div>
+                <h4>Pet Type:</h4>
+                  <div class="btn-group btn-group-justified" role="Type" data-toggle="buttons">
+                      <label class="btn btn-default">
+                          <input name="petType" type="radio" value="Dog">Dog
+                      </label>
+                      <label class="btn btn-default">
+                          <input name="petType" type="radio" value="Cat">Cat
+                      </label>
+                      <label class="btn btn-default">
+                          <input name="petType" type="radio" value="Reptile">Reptile
+                      </label>
+                      <label class="btn btn-default">
+                          <input name="petType" type="radio" value="Fish">Fish
+                      </label>
+                      <label class="btn btn-default">
+                          <input name="petType" type="radio" value="Bird">Bird
+                      </label>
+                  </div>
+
+
+                <h4>Pet Size:</h4>
+                  <div class="btn-group btn-group-justified" role="Size" data-toggle="buttons">
+                      <label class="btn btn-default">
+                          <input name="petType" type="radio" value="0-15lbs">0-15lbs
+                      </label>
+                      <label class="btn btn-default">
+                          <input name="petType" type="radio" value="16-40lbs">16-40lbs
+                      </label>
+                      <label class="btn btn-default">
+                          <input name="petType" type="radio" value="41-70lbs">41-70lbs
+                      </label>
+                      <label class="btn btn-default">
+                          <input name="petType" type="radio" value="71-101lbs">71-101lbs
+                      </label>
+                      <label class="btn btn-default">
+                          <input name="petType" type="radio" value="101lbs+">101lbs+
+                      </label>
+                  </div>
+                <br>
+                <a href='index.html'><img src="assets/pictures/Back_Blue.png"></a>
+
+                <a href='owner2.html'><img src="assets/pictures/Search_Blue.png"></a>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+    <!-- Link to javascript -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+  </body>
+
+</html>

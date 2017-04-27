@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Sign-Up Today!</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- LINK TO FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="assets/css/style_home.css">
+
+    <!-- Link to jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <!-- Facebook -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+
+  </head>
+
+  <body id="home-page">
+    <div>
+      <center><img id="home-logo" src="assets/pictures/BigLogo.JPG"></center>
+    </div>
+    <div id="home-buttons">
+      <a href="owner1.html"><img src="assets/pictures/Owner_Button.png"></a>
+      <a href="setter1.html"><img src="assets/pictures/Setter_Button.png"></a>
+    </div>
+    <div>
+      <button id="sign-in">Sign In</button>
+    </div>
+
+    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDK2xb6uhXODvmHocBqNT00POAoZpYxX2A",
+      authDomain: "setter-sign-up.firebaseapp.com",
+      databaseURL: "https://setter-sign-up.firebaseio.com",
+      projectId: "setter-sign-up",
+      storageBucket: "setter-sign-up.appspot.com",
+      messagingSenderId: "34806841360"
+    };
+
+    firebase.initializeApp(config);
+
+
+
+      $('#sign-in').on("click", function(e){
+        e.preventDefault();
+
+        var provider = new firebase.auth.FacebookAuthProvider();
+
+        firebase.auth().signInWithPopup(provider).then(function(result) {
+          // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+          var token = result.credential.accessToken;
+          // The signed-in user info.
+          var user = result.user;
+          console.log(user);
+          // ...
+        }).catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // The email of the user's account used.
+          var email = error.email;
+          // The firebase.auth.AuthCredential type that was used.
+          var credential = error.credential;
+          // ...
+        });
+      })
+
+    </script>
+
+
+  </body>
+
+</html>

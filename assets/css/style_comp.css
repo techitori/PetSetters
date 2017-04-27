@@ -1,0 +1,55 @@
+/*-------------------------------------------All Pages----------------------------------*/
+body {
+  background-image: url(../pictures/Logo_Wallpaper.png);
+/*    background-color: #c7d2d7;*/
+font-family: 'Rubik', sans-serif;
+}
+
+h3 {font-family: 'Rubik', sans-serif;
+}
+
+p {font-family: 'Rubik', sans-serif;
+}
+
+
+
+#headpic {
+  width: 150px;
+  height: auto;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: #3b4d65;
+    color: #fff;
+    padding: 0px;
+    box-shadow: 5px 0px 40px rgba(0,0,0, .6);
+
+}
+
+.heading-o {
+  color: #fff !important;
+  background-color: #3b4d65 !important;
+}
+
+.panel.panel-default {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .5);
+}
+
+img {
+  height: 50px;
+  align-content: center;
+  padding-right: 20px;
+}
+
+p {
+  text-align: center;
+  color:#3b4d65;
+  font-size: 24pt;
+}
+
+h1 {
+  text-align: center;
+    color:#3b4d65;
+      font-size: 48pt;
+}

@@ -1,0 +1,110 @@
+/*-------------------------------------------All Pages----------------------------------*/
+body {
+  background-image: url(../pictures/Logo_Wallpaper.png);
+/*    background-color: #c7d2d7;*/
+font-family: 'Rubik', sans-serif;
+}
+
+h4 {font-family: 'Rubik', sans-serif;
+}
+
+
+
+#headpic {
+  width: 150px;
+  height: auto;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: #3b4d65;
+    color: #fff;
+    padding: 0px;
+    box-shadow: 5px 0px 40px rgba(0,0,0, .6);
+
+}
+
+.heading-o {
+  color: #fff !important;
+  background-color: #3b4d65 !important;
+}
+
+.heading-s {
+  color: #fff !important;
+  background-color: #bc2f40 !important;
+}
+
+.panel.panel-default {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .5);
+}
+
+/*--------------------------------------Home Page----------------------------------------*/
+body#home-page {
+  background-color: #3b4d65 !important;
+
+}
+
+#home-logo {
+  padding-top: 100px;
+  width: 350px;
+  height: auto;
+}
+
+#home-buttons {
+  text-align: center;
+  background-color: #3b4d65;
+}
+
+button#owner-button, button#setter-button {
+  background-color: #3b4d65;
+  width: 200px;
+}
+
+img {
+  width: 94px;
+  padding-right: 10px;
+}
+
+#name {
+  font-style: bold;
+}
+
+#full-setter-list {
+  width: auto;
+  height: 450px;
+  overflow-y: scroll;
+}
+
+img#mappic {
+    width: 730px;
+}
+
+  #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 50px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+#map_panel {
+  height:450px;
+}
+/*---------------------------------------------------Owner 3-----------------------------*/
+
+
+/*-------------------------------------------------Owner End-----------------------------*/

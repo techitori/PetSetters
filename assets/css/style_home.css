@@ -1,0 +1,78 @@
+/*-------------------------------------------All Pages----------------------------------*/
+body {
+    background-color: #c7d2d7;
+    font-family: 'Rubik', sans-serif;
+}
+
+h3 {font-family: 'Rubik', sans-serif;
+}
+
+p {font-family: 'Rubik', sans-serif;
+}
+#headpic {
+  width: 150px;
+  height: auto;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: #3b4d65;
+    color: #fff;
+    padding: 0px;
+    box-shadow: 5px 0px 40px rgba(0,0,0, .6);
+
+}
+
+.heading-o {
+  color: #fff !important;
+  background-color: #3b4d65 !important;
+}
+
+.heading-s {
+  color: #fff !important;
+  background-color: #bc2f40 !important;
+}
+
+.panel.panel-default {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .5);
+}
+
+/*--------------------------------------Home Page----------------------------------------*/
+body#home-page {
+  background-color: #3b4d65 !important;
+
+}
+
+#home-logo {
+  padding-top: 100px;
+  width: 350px;
+  height: auto;
+}
+
+#home-buttons {
+  text-align: center;
+  background-color: #3b4d65;
+}
+
+button#owner-button, button#setter-button {
+  background-color: #3b4d65;
+  width: 200px;
+}
+
+/*-------------------------------------------Setter 1------------------------------------*/
+
+
+
+/*--------------------------------------------Setter End---------------------------------*/
+
+
+/*------------------------------------------------Owner 1--------------------------------*/
+
+
+/*-----------------------------------------------Owner 2---------------------------------*/
+img {
+  width: 250px;
+  height: auto;
+  margin-top: 30px;
+  padding-right: 30px;
+}

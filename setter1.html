@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>SettProfile</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- LINK TO FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Link to jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+
+
+  </head>
+
+  <body>
+
+    <div class="jumbotron">
+      <a href="index.html"><img id="headpic" src="assets/pictures/BigLogo.JPG"></a>
+      <!-- <h1 class="text-center"><strong>Pet</strong>Setters</h1> -->
+    </div>
+
+    <div class="container">
+
+
+      <div class="row">
+
+        <!-- Sign-Up Panel-->
+        <div class="col-lg-offset-3 col-lg-6">
+          <div class="panel panel-default">
+            <div class="panel-heading heading-s">
+              <h3 class="panel-title"><strong>Sett</strong>Profile!</h3>
+            </div>
+
+            <div class="panel-body">
+
+              <!-- Sign-up Form (note the various input "types")-->
+              <form role="form">
+                <div class="form-group">
+                  <label for="name-input">Name:</label>
+                  <input class="form-control" id="name-input" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="email-input">Email:</label>
+                  <input class="form-control" id="email-input" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="email-input">Address:</label>
+                  <input class="form-control" id="address-input" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="years-input">Years of Experience:</label>
+                  <input class="form-control" id="years-input" type="number">
+                </div>
+                <div class="form-group">
+                 <label for="bio-input">Short Bio</label>
+                 <textarea class="form-control" id="bio-input" rows="5"></textarea>
+                 </div>
+                 <div class="form-group">
+                   <label for="years-input">Pets you like to care for:</label>
+                     <ul class="answers">
+                       <input type="checkbox" name='pet1-s' value="dog" id="pet1-s"><label for="pet1-s"> Dog</label><br/>
+                       <input type="checkbox" name='pet2-s' value="cat" id="pet1-s"><label for="pet1-s"> Cat</label><br/>
+                       <input type="checkbox" name='pet3-s' value="reptile" id="pet1-s"><label for="pet1-s"> Reptile</label><br/>
+                       <input type="checkbox" name='pet4-s' value="bird" id="pet1-s"><label for="pet1-s"> Bird</label><br/>
+                     </ul>
+                 </div>
+
+                <a href='index.html'><img src="assets/pictures/Back_Red.png"></a>
+
+                <a href='owner2.html'><img src="assets/pictures/Upload_Red.png"></a>
+
+                <a href='owner2.html'><img src="assets/pictures/All_Sett_Red.png"></a>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Most Recent setter Panel -->
+<!--         <div class="col-lg-6">
+          <div class="panel panel-default">
+            <div class="panel-heading heading-s">
+              <h3 class="panel-title"><strong>Preview</strong>Profile</h3>
+            </div>
+            <div class="panel-body" id="recent-setter">
+              <h2 id="name-display"></h2>
+              <h4 id="email-display"></h4>
+              <h4 id="years-display"></h4>
+              <p id="bio-display"></p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+
+    <!-- Link to javascript -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+  </body>
+
+</html>

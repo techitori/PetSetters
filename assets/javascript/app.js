@@ -53,6 +53,9 @@ dataRef.ref().on("child_added", function(childSnapshot) {
   console.log(childSnapshot.val().years);
   console.log(childSnapshot.val().bio);
   console.log(childSnapshot.val().joinDate);
+  
+   // Change the HTML to reflect
+  $("#name-display").html(childSnapshot.val().name);
 
   // full list of items to the well
   $("#full-setter-list").prepend("<div class='well'><img style='float:left' src='assets/pictures/PetLogo.JPG'/><div class='well-text'><div id='name'><strong>" + childSnapshot.val().name +
@@ -101,8 +104,8 @@ $('#sign-in').on("click", function(e){
 
 dataRef.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot) {
 
-  // Change the HTML to reflect
-  $("#name-display").html(snapshot.val().name);
+   
+  
   
   // Handle the errors
 }, function(errorObject) {

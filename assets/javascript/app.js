@@ -56,10 +56,10 @@ dataRef.ref().on("child_added", function(childSnapshot) {
   console.log(childSnapshot.val().joinDate);
   
    // Change the HTML to reflect
-  $("#name-display").html("<h2>" + "Welcome to PetSetters, " + childSnapshot.val().name) + "!" + "</h2>";
+  $("#name-display").html("<h2>Welcome to PetSetters, " + childSnapshot.val().name) + "!</h2>";
 
   // full list of items to the well
-  $("#full-setter-list").prepend("<div class='well'><img style='float:left' src= childSnapshot.val().userPic/><div class='well-text'><div id='name'><strong>" + childSnapshot.val().name +
+  $("#full-setter-list").prepend("<div class='well'><img style='float:left' src=" + childSnapshot.val().userPic + "/><div class='well-text'><div id='name'><strong>" + childSnapshot.val().name +
     "</strong></div><div id='email'>" + "Distance: " + childSnapshot.val().email +
     " </div><div id='years'>" + "Review: " + childSnapshot.val().years + " years" +
     " </div><div id='bio'>" + "Rate: " + childSnapshot.val().bio + " </div></div></div>");

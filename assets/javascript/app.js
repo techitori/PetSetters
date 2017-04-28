@@ -30,7 +30,7 @@ $("#add-user").on("click", function(event) {
   email = $("#email-input").val().trim();
   years = $("#years-input").val().trim();
   bio = $("#bio-input").val().trim();
-  // pic = $("#pic-input");
+  
 
   // Code for the push
   dataRef.ref().push({
@@ -49,16 +49,17 @@ dataRef.ref().on("child_added", function(childSnapshot) {
   // Log everything that's coming out of snapshot
   // console.log(childSnapshot.val().pic);
   console.log(childSnapshot.val().name);
+  console.log(childSnapshot.val().userPic);
   console.log(childSnapshot.val().email);
   console.log(childSnapshot.val().years);
   console.log(childSnapshot.val().bio);
   console.log(childSnapshot.val().joinDate);
   
    // Change the HTML to reflect
-  $("#name-display").html(childSnapshot.val().name);
+  $("#name-display").html("<h2>" + "Welcome to PetSetters, " + childSnapshot.val().name) + "</h2>";
 
   // full list of items to the well
-  $("#full-setter-list").prepend("<div class='well'><img style='float:left' src='assets/pictures/PetLogo.JPG'/><div class='well-text'><div id='name'><strong>" + childSnapshot.val().name +
+  $("#full-setter-list").prepend("<div class='well'><img style='float:left' src= userPic/><div class='well-text'><div id='name'><strong>" + childSnapshot.val().name +
     "</strong></div><div id='email'>" + "Distance: " + childSnapshot.val().email +
     " </div><div id='years'>" + "Review: " + childSnapshot.val().years + " years" +
     " </div><div id='bio'>" + "Rate: " + childSnapshot.val().bio + " </div></div></div>");
@@ -84,8 +85,12 @@ $('#sign-in').on("click", function(e){
     name = user.displayName;
       console.log(name);
     
+    userPic = user.photoURL;
+      console.log(userPic);
+    
     dataRef.ref().push({
-      name: name
+      name: name,
+      userPic: userPic
     
     
   });

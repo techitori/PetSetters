@@ -92,7 +92,6 @@ $('#sign-in').on("click", function(e){
       name: name,
       userPic: userPic
     
-    
   });
     // ...
   }).catch(function(error) {
@@ -105,13 +104,16 @@ $('#sign-in').on("click", function(e){
     var credential = error.credential;
     // ...
   });
-});
-
-firebase.auth().onAuthStateChanged(user => {
+  
+  firebase.auth().onAuthStateChanged(user => {
   if(user) {
     window.location = 'home.html'; //After successful login, user will be redirected to home.html
   }
+  });
+  
 });
+
+
 
 dataRef.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot) {
 

@@ -87,6 +87,8 @@ $('#sign-in').on("click", function(e){
     // The signed-in user info.
     var user = result.user;
     console.log(user);
+    name = user.displayName;
+      console.log(name);
     // ...
   }).catch(function(error) {
     // Handle Errors here.

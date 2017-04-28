@@ -82,8 +82,10 @@ $('#sign-in').on("click", function(e){
     // The signed-in user info.
     var user = result.user;
     console.log(user);
-    name = user.displayName;
-      console.log(name);
+    uname = user.displayName;
+      console.log(uname);
+    
+    name = firebase.auth().currentUser.displayName;
     
     userPic = user.photoURL;
       console.log(userPic);

@@ -26,7 +26,7 @@ $("#add-user").on("click", function(event) {
   // YOUR TASK!!!
   // Code in the logic for storing and retrieving the most recent user.
   // Don't forget to provide initial data to your Firebase database.
-  name = $("#name-input").val().trim();
+ 
   email = $("#email-input").val().trim();
   years = $("#years-input").val().trim();
   bio = $("#bio-input").val().trim();
@@ -35,8 +35,7 @@ $("#add-user").on("click", function(event) {
   // Code for the push
   dataRef.ref().push({
 
-    // pic: pic,
-    name: name,
+    
     email: email,
     years: years,
     bio: bio,
@@ -66,15 +65,7 @@ dataRef.ref().on("child_added", function(childSnapshot) {
   console.log("Errors handled: " + errorObject.code);
 });
 
-dataRef.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot) {
 
-  // Change the HTML to reflect
-  // $("#pic-display").html(snapshot.pic);
-  $("#name-display").html(snapshot.val().name);
-  $("#email-display").html(snapshot.val().email);
-  $("#years-display").html(snapshot.val().years);
-  $("#bio-display").html(snapshot.val().bio);
-});
 
 $('#sign-in').on("click", function(e){
   e.preventDefault();
@@ -89,6 +80,12 @@ $('#sign-in').on("click", function(e){
     console.log(user);
     name = user.displayName;
       console.log(name);
+    
+    dataRef.ref().push({
+      name: name
+    
+    
+  });
     // ...
   }).catch(function(error) {
     // Handle Errors here.
@@ -100,7 +97,18 @@ $('#sign-in').on("click", function(e){
     var credential = error.credential;
     // ...
   });
-})
+});
+
+dataRef.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot) {
+
+  // Change the HTML to reflect
+  $("#name-display").html(snapshot.val().name);
+  
+  // Handle the errors
+}, function(errorObject) {
+  console.log("Errors handled: " + errorObject.code);
+  
+});
 
 
      function initMap() {

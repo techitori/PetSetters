@@ -56,10 +56,10 @@ dataRef.ref().on("child_added", function(childSnapshot) {
   $("#name-display").html("<h2>Welcome to PetSetters, " + firebase.auth().currentUser.displayName + "!</h2>");
 
   // full list of items to the well
-  $("#full-setter-list").prepend("<div class='well'><img style='float:left' src='" + childSnapshot.val().userPic + "'/><div class='well-text'><div id='name'><strong>" + firebase.auth().currentUser.displayName +
+  $("#full-setter-list").prepend("<div class='well'><img style='float:left' src='" + firebase.auth().currentUser.photoURL + "'/><div class='well-text'><div id='name'><strong>" + firebase.auth().currentUser.displayName +
     "</strong></div><div id='email'>" + "Distance: " + childSnapshot.val().email +
     " </div><div id='years'>" + "Experience: " + childSnapshot.val().years + " years" +
-    " </div><div id='bio'>" + "Rate: " + childSnapshot.val().bio + " </div><div id='selectsetter' href='completion.html'>Select ME!</div></div></div>");
+    " </div><div id='bio'>" + "Rate: " + childSnapshot.val().bio + " </div><div><a href='setter_profile.html'>Select ME!</a></div></div></div>");
 
 // Handle the errors
 }, function(errorObject) {

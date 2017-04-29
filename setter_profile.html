@@ -23,12 +23,7 @@
     <!-- Link to Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 
-    <!-- Link to Javascript -->
-    <script type="text/javascript" src="assets/javascript/app_select.js"></script>
 
-    <!-- Link to Javascript for the Map-->
-  	<script src="assets/javascript/app.js" type="text/javascript">
-  	</script>
 
     <!-- Link to Ajax -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
@@ -92,13 +87,10 @@
 
 
                           <div class="panel-body" id="map_panel">
-                            <div id="floating-panel">
-                              <input id="address" type="textbox" value="Houston,TX"> <input id=
-                              "submit" type="button" value="Geocode">
-                            </div>
 
 
-                            <div id="map">
+
+                            <div id="map-canvas">
                             </div>
                           </div>
                         </div>
@@ -142,7 +134,21 @@
 
         </div>
 
+    <!-- Link to Javascript -->
+    <script type="text/javascript" src="assets/javascript/app_select.js"></script>
 
+    <!-- Link to Javascript for the Map-->
+  	<script src="assets/javascript/app.js" type="text/javascript">
+  	</script>
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+ <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcQ-jcwgwOG2WEdkgZ6YbW83WEQnLerpM&callback=initMap"></script>
+ <script src="assets/javascript/markerclusterer.js"></script>
+ <script src="assets/javascript/List.js"></script>
+ <script src="assets/javascript/Mapster.js"></script>
+ <script src="assets/javascript/map-options.js"></script>
+ <script src="assets/javascript/jqueryui.mapster.js"></script>
+ <script src="assets/javascript/script.js"></script>
 
 
   </body>

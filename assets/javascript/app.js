@@ -56,7 +56,7 @@ dataRef.ref().on("child_added", function(childSnapshot) {
   console.log(childSnapshot.val().joinDate);
   
    // Change the HTML to reflect
-  $("#name-display").html("<h2>Welcome to PetSetters, " + firebase.auth().currentUser.displayName + "!</h2>";
+  $("#name-display").html("<h2>Welcome to PetSetters, " + firebase.auth().currentUser.displayName + "!</h2>");
 
   // full list of items to the well
   $("#full-setter-list").prepend("<div class='well'><img style='float:left' src='" + childSnapshot.val().userPic + "'/><div class='well-text'><div id='name'><strong>" + childSnapshot.val().name +

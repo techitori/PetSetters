@@ -79,7 +79,7 @@ img#mappic {
     width: 730px;
 }
 
-  #map {
+  #map-canvas {
         height: 100%;
       }
       /* Optional: Makes the sample page fill the window. */
